@@ -12,6 +12,12 @@ import { AhorcadoComponent } from './page/ahorcado/ahorcado.component';
 import { PreguntadosComponent } from './page/preguntados/preguntados.component';
 import { MayorOMenorComponent } from './page/mayor-o-menor/mayor-o-menor.component';
 import { SimonDiceComponent } from './page/simon-dice/simon-dice.component';
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { environment } from 'src/environments/environment';
+import { RegistroComponent } from './page/registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +30,15 @@ import { SimonDiceComponent } from './page/simon-dice/simon-dice.component';
     AhorcadoComponent,
     PreguntadosComponent,
     MayorOMenorComponent,
-    SimonDiceComponent   
+    SimonDiceComponent,
+    RegistroComponent   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    //NgbModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

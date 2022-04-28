@@ -9,11 +9,14 @@ import { HomeComponent} from './page/home/home.component';
 import { PreguntadosComponent} from './page/preguntados/preguntados.component';
 import { MayorOMenorComponent} from './page/mayor-o-menor/mayor-o-menor.component';
 import { SimonDiceComponent } from './page/simon-dice/simon-dice.component';
+import { RegistroComponent } from './page/registro/registro.component';
 
 const routes: Routes = [
   { path:'home', component:HomeComponent},
 
   { path:'login', component:LoginComponent},
+
+  { path:'registro', component:RegistroComponent},
 
   { path:'quien-soy', component:QuienSoyComponent},
 
@@ -26,6 +29,7 @@ const routes: Routes = [
     { path:'**', component:NotFoundComponent }
     ]
   },
+  
   //{ path:'**', component:NotFoundComponent }
 ];
 

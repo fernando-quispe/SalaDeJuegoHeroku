@@ -13,6 +13,13 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  redirigirLogin(){
+    this.ruteo.navigateByUrl('login')
+  }
+
+  redirigirRegistro(){
+    this.ruteo.navigateByUrl('registro')
+  }
   redirigirQuienSoy(){
     this.ruteo.navigateByUrl('quien-soy')
   }
